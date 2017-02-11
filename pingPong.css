@@ -1,0 +1,108 @@
+body {
+	text-align: center;
+}
+
+svg {
+ 	max-width: 750px;
+	margin: auto;
+}
+
+.cls-1 {
+	fill: none;
+}
+
+.cls-2 {
+	isolation: isolate;
+}
+
+.cls-3 {
+	/* fill: #6159a6; */
+	fill: dodgerblue;
+}
+
+.cls-4, .cls-6 {
+	mix-blend-mode: multiply;
+}
+
+.cls-5 {
+	clip-path: url(#clip-path);
+}
+
+.cls-6 {
+	opacity: 0.25;
+}
+
+.cls-7 {
+	/* fill: #231f20; */
+	fill: red;
+	opacity: 0.25;
+	mix-blend-mode: multiply;
+}
+
+.cls-8 {
+	/* fill: #f1b91c; */
+	fill: lime;
+}
+
+.cls-9 {
+	/* fill: #0f0f16; */
+	fill: indigo;
+}
+
+.cls-10 {
+	fill: #fff;
+}
+
+.limePaddle {
+	/* transform: rotate(10deg); */
+	animation: limeSwing 1s ease-out 0.5s forwards;
+}
+
+@keyframes limeSwing {
+	100% {transform: translateX(-120px);}
+}
+
+.limeTap {
+	animation: limeSwing 1s ease-out 0.5s forwards,
+			   limeTap 1.5s ease-out 0.75s infinite;
+}
+
+@keyframes limeTap {
+	0% {transform: translateX(-120px);}
+	1% {transform: translateX(-110px);}
+	30% {transform: translateX(-120px);}
+	100% {transform: translateX(-120px);}
+}
+
+.indigoPaddle {
+	/* transform: rotate(10deg); */
+	animation: indigoSwing 1s ease-out 0.5s forwards;
+}
+
+@keyframes indigoSwing {
+	100% {transform: translateX(100px);}
+}
+
+.indigoTap {
+	animation: indigoSwing 1s ease-out 0.5s forwards,
+			   indigoTap 1.5s ease-out 0s infinite;
+}
+
+@keyframes indigoTap {
+	0% {transform: translateX(100px);}
+	1% {transform: translateX(90px);}
+	30% {transform: translateX(100px);}
+	100% {transform: translateX(100px);}
+}
+
+.pingPongBall {
+	
+}
+
+@keyframes rally {
+	25% {transform: translateX(-75px) translateY(-15px);}
+	45% {transform: translateX(-135px) translateY(-25px);}
+	55% {transform: translateX(-165px) translateY(-25px);}
+	75% {transform: translateX(-225px) translateY(-15px);}
+	100% {transform: translateX(-300px) translateY(0px);}
+}
