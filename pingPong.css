@@ -2,6 +2,13 @@ body {
 	text-align: center;
 }
 
+button {
+	margin: 10px auto 20px;
+	padding: 15px;
+	background: gold;
+	border: 1px solid green;
+}
+
 svg {
  	max-width: 750px;
 	margin: auto;
